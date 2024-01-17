@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb69ceea-6d51-433c-afef-2dc3960b8073" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/EagleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/controller/LibraryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Shelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/CreatorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/LibraryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/ShelfRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/dtos/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/dtos/CreateAccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/dtos/DeleteAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/dtos/LogInRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/exceptions/IncorrectPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/exceptions/NameAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/exceptions/NoBookFoundWIthTitleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/exceptions/ValidateLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/CreatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/CreatorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/utils/mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/eagle/EagleApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/eagle/data/repositories/ShelfRepoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/eagle/services/CreatorServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/eagle/services/UserServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/EagleApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/controller/LibraryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Creator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Library.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Shelf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/CreatorRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/LibraryRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/ShelfRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/UserRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/dtos/BookDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/dtos/CreateAccountRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/dtos/DeleteAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/dtos/LogInRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/exceptions/IncorrectPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/exceptions/NameAlreadyExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/exceptions/NoBookFoundWIthTitleException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/exceptions/UserNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/exceptions/ValidateLoginException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/BookServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/CreatorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/CreatorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/utils/mapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/eagle/EagleApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/eagle/services/UserServiceImplTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/eagle/controller/LibraryController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/example/eagle/services/CreatorServiceImplTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/example/eagle/services/UserServiceImplTest.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2XinfDoUngymo3COjW8QVfFkhUt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/moyin/IdeaProjects/eagle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.eagle.services" />
+      <recent name="com.example.eagle.data.repositories" />
+      <recent name="services" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.eagle.data.repositories" />
+      <recent name="com.example.eagle.services" />
+      <recent name="services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.eagle.data.models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShelfRepoTest.findByBookTitleTest">
+    <configuration name="CreatorServiceImplTest.testThatCreatorCanDeleteAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eagle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eagle.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.eagle.services" />
+      <option name="MAIN_CLASS_NAME" value="com.example.eagle.services.CreatorServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatCreatorCanDeleteAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatorServiceImplTest.testThatCreatorCanGetTheNumberOfBookInALibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eagle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eagle.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.eagle.services" />
+      <option name="MAIN_CLASS_NAME" value="com.example.eagle.services.CreatorServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatCreatorCanGetTheNumberOfBookInALibrary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShelfRepoTest.findByBookTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eagle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eagle.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.eagle.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.eagle.data.repositories.ShelfRepoTest" />
+      <option name="METHOD_NAME" value="findByBookTitleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShelfRepoTest.findByBook_Title" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eagle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eagle.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.eagle.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.eagle.data.repositories.ShelfRepoTest" />
+      <option name="METHOD_NAME" value="findByBook_Title" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eagle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eagle.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.eagle.services" />
+      <option name="MAIN_CLASS_NAME" value="com.example.eagle.services.UserServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EagleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eagle" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eagle.EagleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShelfRepoTest.findByBookTitleTest" />
+        <item itemvalue="JUnit.ShelfRepoTest.findByBook_Title" />
+        <item itemvalue="JUnit.CreatorServiceImplTest.testThatCreatorCanGetTheNumberOfBookInALibrary" />
+        <item itemvalue="JUnit.CreatorServiceImplTest.testThatCreatorCanDeleteAccount" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb69ceea-6d51-433c-afef-2dc3960b8073" name="Changes" comment="" />
+      <created>1699120871905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699120871905</updated>
+      <workItem from="1699120873108" duration="29727000" />
+      <workItem from="1699228004638" duration="13289000" />
+      <workItem from="1699281294653" duration="858000" />
+      <workItem from="1699346703421" duration="2243000" />
+      <workItem from="1699394464777" duration="27783000" />
+      <workItem from="1699535932389" duration="3881000" />
+      <workItem from="1699553216673" duration="27382000" />
+      <workItem from="1699690012530" duration="4504000" />
+      <workItem from="1699717696707" duration="8496000" />
+      <workItem from="1699860727106" duration="1932000" />
+      <workItem from="1699868579373" duration="356000" />
+      <workItem from="1699911317369" duration="453000" />
+      <workItem from="1700080173268" duration="102000" />
+      <workItem from="1700137248478" duration="3027000" />
+      <workItem from="1704966858997" duration="299000" />
+      <workItem from="1704974420134" duration="1898000" />
+      <workItem from="1704984661124" duration="1367000" />
+      <workItem from="1705226854861" duration="2877000" />
+      <workItem from="1705314114908" duration="14000" />
+      <workItem from="1705314169527" duration="1115000" />
+      <workItem from="1705329602206" duration="128000" />
+      <workItem from="1705330001317" duration="4141000" />
+      <workItem from="1705414199731" duration="6795000" />
+      <workItem from="1705500135968" duration="12201000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
