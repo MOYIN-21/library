@@ -1,17 +1,16 @@
 package com.example.eagle.data.repositories;
 
-import com.example.eagle.data.models.Book;
+import com.example.eagle.data.models.Books;
 import com.example.eagle.data.models.Shelf;
 //import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-//@Repository
-public interface ShelfRepo extends JpaRepository<Shelf, Long> {
+@Repository
+public interface ShelfRepo extends MongoRepository<Shelf, String> {
+    Optional<Shelf> findByBooks(Books books);
 
-    @Query("select s from Shelf s where :book IN s.books")
-    Optional<Shelf> findByBook(Book book);
-
+    Optional<Books> findByBook_Title(String title);
 }

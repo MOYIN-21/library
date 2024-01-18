@@ -1,7 +1,6 @@
 package com.example.eagle.utils;
-import com.example.eagle.data.models.Book;
+import com.example.eagle.data.models.Books;
 import com.example.eagle.data.models.Creator;
-import com.example.eagle.data.models.Library;
 import com.example.eagle.data.models.User;
 import com.example.eagle.dtos.BookDto;
 import com.example.eagle.dtos.CreateAccountRequest;
@@ -17,11 +16,11 @@ public class mapper {
         creator.setPassword(createAccount.getPassword());
     }
 
-    public static void map(Book book, BookDto bookDto){
-        book.setTitle(bookDto.getTitle());
-        book.setCreator(bookDto.getCreator());
-        book.setPage(bookDto.getPage());
-        book.setContent(bookDto.getContent());
-        book.setDate(bookDto.getDate());
+    public static void map(Books books, BookDto bookDto){
+        books.setBook_title(bookDto.getTitle());
+        books.setCreator(bookDto.getCreator());
+        books.setPage(bookDto.getPage());
+        books.setContent(bookDto.getContent());
+        books.setDate(bookDto.getDate());
     }
 }

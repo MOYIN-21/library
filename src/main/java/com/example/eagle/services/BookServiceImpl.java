@@ -1,5 +1,5 @@
 package com.example.eagle.services;
-import com.example.eagle.data.models.Book;
+import com.example.eagle.data.models.Books;
 import com.example.eagle.dtos.BookDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,9 +15,9 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public String writeBook(BookDto bookDto) {
-        Book book = new Book();
-        map(book, bookDto);
-        shelfService.save(book);
+        Books books = new Books();
+        map(books, bookDto);
+        shelfService.save(books);
         return "Book saved successfully";
     }
 

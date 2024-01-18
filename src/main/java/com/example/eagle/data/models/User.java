@@ -1,31 +1,17 @@
 package com.example.eagle.data.models;
 
-import jakarta.persistence.*;
 import lombok.Data;
-
-import static jakarta.persistence.GenerationType.IDENTITY;
-//import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-//@Document("/Users")
-@Entity
+@Document("/Users")
 public class User {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private Long id;
+    private String id;
     private String userName;
     private String password;
-    @ManyToOne
     private Library library;
-    @ManyToOne
-    private Book book;
+    private Books books;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
-

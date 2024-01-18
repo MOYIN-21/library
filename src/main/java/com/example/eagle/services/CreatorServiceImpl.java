@@ -37,10 +37,10 @@ public class CreatorServiceImpl implements CreatorService{
 
     @Override
     public boolean login(LogInRequest creator) throws LoginException {
-//        Optional<User> foundUser = creatorRepo.findByUserNameAndPassword(creator.getUserName(), creator.getPassword());
-//        if (foundUser.isPresent()) {
-//            return true;
-//        }
+        Optional<User> foundUser = creatorRepo.findByUserNameAndPassword(creator.getUserName(), creator.getPassword());
+        if (foundUser.isPresent()) {
+            return true;
+        }
         throw new LoginException("Invalid Credentials");
     }
 
@@ -51,17 +51,17 @@ public class CreatorServiceImpl implements CreatorService{
     }
 
     private Creator findUser(String userName) throws UserNotFoundException {
-//        Creator creator = creatorRepo.findByUserName(userName);
-//        if(creator.isEmpty()) throw new UserNotFoundException("creator not Found");
+        Creator creator = creatorRepo.findByUserName(userName);
+        if(creator == null) throw new UserNotFoundException("creator not Found");
         return null;
     }
 
 
     private boolean validateCreatorUserName(String userName) throws NameAlreadyExistException {
-//        Creator foundCreator = creatorRepo.findByUserName(userName);
-//        if (foundCreator.isPresent()) {
-//            throw new NameAlreadyExistException("Username already exist");
-//        }
+        Creator foundCreator = creatorRepo.findByUserName(userName);
+        if (foundCreator != null) {
+            throw new NameAlreadyExistException("Username already exist");
+        }
         return false;
     }
 }

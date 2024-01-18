@@ -1,50 +1,40 @@
 package com.example.eagle.services;
 
-import com.example.eagle.data.models.Book;
+import com.example.eagle.data.models.Books;
 import com.example.eagle.data.models.Shelf;
+import com.example.eagle.data.repositories.ShelfRepo;
 import com.example.eagle.exceptions.NoBookFoundWIthTitleException;
-import com.example.eagle.services.ShelfService;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-//package com.example.eagle.services;
-//
-//import com.example.eagle.data.models.Book;
-//import com.example.eagle.data.models.Shelf;
-//import com.example.eagle.data.repositories.ShelfRepo;
-//import com.example.eagle.exceptions.NoBookFoundWIthTitleException;
-//import lombok.AllArgsConstructor;
-//import org.springframework.stereotype.Service;
-//
-//import java.util.Optional;
-//
+import java.util.Optional;
 @Service
-//@AllArgsConstructor
+@AllArgsConstructor
 public class ShelfServiceImpl implements ShelfService {
-////    @Autowired
-//    private final ShelfRepo shelfRepo;
+    private final ShelfRepo shelfRepo;
     @Override
-    public Book findByBook_Title(String title) throws NoBookFoundWIthTitleException {
-//        Optional<Book> foundBook = shelfRepo.findByBook_Title(title);
-//        if (foundBook.isPresent()){
-//            Book book = foundBook.get();
-//        if (title.equalsIgnoreCase(book.getTitle())){
-//            return book;}
-//        }
+    public Books findByBook_Title(String title) throws NoBookFoundWIthTitleException {
+        Optional<Books> foundBook = shelfRepo.findByBook_Title(title);
+        if (foundBook.isPresent()){
+            Books books = foundBook.get();
+        if (title.equalsIgnoreCase(books.getBook_title())){
+            return books;}
+        }
 
         throw  new NoBookFoundWIthTitleException("Book not found");
     }
-//
+
     @Override
-    public String save(Book book) {
-//        Shelf shelf = new Shelf();
-//        shelf.setBooks(book);
-//        shelf.setTitle(book.getTitle());
-//        shelfRepo.save(shelf);
+    public String save(Books books) {
+        Shelf shelf = new Shelf();
+        shelf.setBooks(books);
+        shelf.setTitle(books.getBook_title());
+        shelfRepo.save(shelf);
         return "Book saved successfully";
     }
-//
+
     @Override
     public void deleteAll() {
-//        shelfRepo.deleteAll();
+        shelfRepo.deleteAll();
     }
 }

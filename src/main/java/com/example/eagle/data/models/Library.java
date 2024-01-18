@@ -1,28 +1,16 @@
 package com.example.eagle.data.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
-//import org.springframework.data.mongodb.core.mapping.DBRef;
-//import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Data
-//@Document("/library")
-@Entity
-@AllArgsConstructor
-@RequiredArgsConstructor
+@Document("/library")
 public class Library {
     @Id
-    private Long id;
-    @OneToOne
+    private String id;
     private Shelf shelf;
-    @ManyToOne
     private User users;
-    @ManyToOne
     private Creator creator;
 }

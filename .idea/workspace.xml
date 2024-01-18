@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb69ceea-6d51-433c-afef-2dc3960b8073" name="Changes" comment="" />
+    <list default="true" id="bb69ceea-6d51-433c-afef-2dc3960b8073" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Shelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/Shelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/CreatorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/CreatorRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/LibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/LibraryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/ShelfRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/ShelfRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/data/repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/CreatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/CreatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/LibraryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/ShelfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eagle/utils/mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eagle/utils/mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/eagle/data/repositories/ShelfRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/eagle/data/repositories/ShelfRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/controller/LibraryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/controller/LibraryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Creator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Creator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Shelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/Shelf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/CreatorRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/CreatorRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/LibraryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/LibraryRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/ShelfRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/ShelfRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/data/repositories/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/CreatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/CreatorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/LibraryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/ShelfServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/services/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/services/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/eagle/utils/mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/eagle/utils/mapper.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,36 +87,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/moyin/IdeaProjects/eagle&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "library",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/moyin/IdeaProjects/eagle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.eagle.services" />
@@ -91,7 +136,7 @@
       <recent name="com.example.eagle.data.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShelfRepoTest.findByBookTitleTest">
+  <component name="RunManager" selected="Spring Boot.EagleApplication">
     <configuration name="CreatorServiceImplTest.testThatCreatorCanDeleteAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eagle" />
       <extension name="coverage">
@@ -220,7 +265,9 @@
       <workItem from="1705330001317" duration="4141000" />
       <workItem from="1705414199731" duration="6795000" />
       <workItem from="1705500135968" duration="12201000" />
-      <workItem from="1705527608343" duration="1331000" />
+      <workItem from="1705527608343" duration="1951000" />
+      <workItem from="1705558834914" duration="6715000" />
+      <workItem from="1705613549545" duration="549000" />
     </task>
     <servers />
   </component>

@@ -32,18 +32,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean login(LogInRequest logInRequest) throws LoginException {
-//        Optional<User> foundUser = userRepo.findByUserNameAndPassword(logInRequest.getUserName(), logInRequest.getPassword());
-//        if (foundUser.isPresent()) {
-//            return true;
-//        }
+        Optional<User> foundUser = userRepo.findByUserNameAndPassword(logInRequest.getUserName(), logInRequest.getPassword());
+        if (foundUser.isPresent()) {
+            return true;
+        }
         throw new LoginException("Invalid Credentials");
     }
 
     private boolean validateUserName(String userName) throws NameAlreadyExistException {
-//        Optional<User> foundUser = userRepo.findByUserName(userName);
-//        if (foundUser.isPresent()) {
-//            throw new NameAlreadyExistException("Username already exist");
-//        }
+        Optional<User> foundUser = userRepo.findByUserName(userName);
+        if (foundUser.isPresent()) {
+            throw new NameAlreadyExistException("Username already exist");
+        }
         return false;
     }
 
@@ -59,8 +59,8 @@ public class UserServiceImpl implements UserService {
     }
 
     private User findUser(String userName) throws UserNotFoundException {
-//        Optional<User> user = userRepo.findByUserName(userName);
-//        if(user.isEmpty()) throw new UserNotFoundException("User not Found");
+        Optional<User> user = userRepo.findByUserName(userName);
+        if(user.isEmpty()) throw new UserNotFoundException("User not Found");
         return null;
     }
 }
