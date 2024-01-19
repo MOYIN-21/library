@@ -14,10 +14,10 @@ public class ShelfServiceImpl implements ShelfService {
     private final ShelfRepo shelfRepo;
     @Override
     public Books findByBook_Title(String title) throws NoBookFoundWIthTitleException {
-        Optional<Books> foundBook = shelfRepo.findByBook_Title(title);
+        Optional<Books> foundBook = shelfRepo.findByTitle(title);
         if (foundBook.isPresent()){
             Books books = foundBook.get();
-        if (title.equalsIgnoreCase(books.getBook_title())){
+        if (title.equalsIgnoreCase(books.getTitle())){
             return books;}
         }
 
@@ -28,7 +28,7 @@ public class ShelfServiceImpl implements ShelfService {
     public String save(Books books) {
         Shelf shelf = new Shelf();
         shelf.setBooks(books);
-        shelf.setTitle(books.getBook_title());
+        shelf.setTitle(books.getTitle());
         shelfRepo.save(shelf);
         return "Book saved successfully";
     }

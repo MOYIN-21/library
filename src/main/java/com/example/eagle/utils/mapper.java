@@ -17,7 +17,7 @@ public class mapper {
     }
 
     public static void map(Books books, BookDto bookDto){
-        books.setBook_title(bookDto.getTitle());
+        books.setTitle(bookDto.getTitle());
         books.setCreator(bookDto.getCreator());
         books.setPage(bookDto.getPage());
         books.setContent(bookDto.getContent());

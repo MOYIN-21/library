@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Books {
     @Id
     private String id;
-    private String book_title;
+    private String title;
     private String creator;
     private LocalDate date;
     private String content;

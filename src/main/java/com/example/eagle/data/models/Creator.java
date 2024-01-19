@@ -1,5 +1,4 @@
 package com.example.eagle.data.models;
-
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
