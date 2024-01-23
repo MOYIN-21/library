@@ -27,7 +27,7 @@ class CreatorServiceImplTest {
     @Autowired
     private BookService bookService;
     @Autowired
-    private UserService userService;
+    private ReaderService readerService;
     @Autowired
     private ShelfService shelfService;
     private CreateAccountRequest creator;
@@ -42,30 +42,30 @@ class CreatorServiceImplTest {
     }
 
     @Test
-    public void testThatUserCanCreateAccountInLibrary() throws NameAlreadyExistException {
+    public void testThatUserCanSignUpForLibrary() throws NameAlreadyExistException {
         creatorService.deleteAll();
-        String expected = creatorService.register(creator);
+        String expected = creatorService.signUp(creator);
         assertEquals("Account for Creator created successfully", expected);
     }
 
     @Test
     public void testThatTwoUsersWithTheSameCredentialsCanNotExistInLibrary() throws NameAlreadyExistException {
         creatorService.deleteAll();
-        creatorService.register(creator);
+        creatorService.signUp(creator);
         CreateAccountRequest createAccountRequest = new CreateAccountRequest();
         createAccountRequest.setUserName("Prof. Lawrence");
         createAccountRequest.setPassword("0");
-        assertThrows(NameAlreadyExistException.class, () -> creatorService.register(createAccountRequest));
+        assertThrows(NameAlreadyExistException.class, () -> creatorService.signUp(createAccountRequest));
 
     }
 
     @Test
-    public void testThatCreatorCanLogInAfterCreatingAccount() throws NameAlreadyExistException, LoginException {
+    public void testThatCreatorCanLogInAfterSigningUAccount() throws NameAlreadyExistException, LoginException {
         creatorService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("0");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
@@ -83,7 +83,7 @@ class CreatorServiceImplTest {
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("1");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
@@ -93,12 +93,12 @@ class CreatorServiceImplTest {
     }
 
     @Test
-    public void testThatCreatorCanWriteBookAfterCreatingAndLogInIntoAccount() throws NameAlreadyExistException, LoginException {
+    public void testThatCreatorCanWriteBookAfterSignUpAndLogInIntoAccount() throws NameAlreadyExistException, LoginException {
         creatorService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("0");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
@@ -123,7 +123,7 @@ class CreatorServiceImplTest {
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Law");
         user3.setPassword("1");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos1 = new LogInRequest();
@@ -151,7 +151,7 @@ class CreatorServiceImplTest {
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("0");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
@@ -169,7 +169,7 @@ class CreatorServiceImplTest {
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("0");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
@@ -191,7 +191,7 @@ class CreatorServiceImplTest {
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Prof. Lawrence");
         user3.setPassword("0");
-        String expected = creatorService.register(user3);
+        String expected = creatorService.signUp(user3);
         assertEquals("Account for Creator created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();

@@ -18,9 +18,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 
-class UserServiceImplTest {
+class ReaderServiceImplTest {
     @Autowired
-    private UserService userService;
+    private ReaderService readerService;
     @Autowired
     private ShelfService shelfService;
     private CreateAccountRequest user;
@@ -35,44 +35,44 @@ class UserServiceImplTest {
 
     @Test
     public void testThatUserCanCreateAccountInLibrary() throws NameAlreadyExistException {
-        userService.deleteAll();
-        String expected = userService.register(user);
+        readerService.deleteAll();
+        String expected = readerService.register(user);
         assertEquals("Account created successfully", expected);
     }
     @Test
     public void testThatOneAccountCanBeCreatedInLibrary() throws NameAlreadyExistException {
-        userService.deleteAll();
-        userService.register(user);
+        readerService.deleteAll();
+        readerService.register(user);
         CreateAccountRequest user2 = new CreateAccountRequest();
         user2.setUserName("Moyin");
         user2.setPassword("2");
-        String expected = userService.register(user2);
+        String expected = readerService.register(user2);
         assertEquals("Account created successfully", expected);
     }
 
     @Test
     public void testThatTwoUsersWithTheSameCredentialsCanNotExistInLibrary() throws NameAlreadyExistException {
-      userService.deleteAll();
-        userService.register(user);
+      readerService.deleteAll();
+        readerService.register(user);
       CreateAccountRequest createAccountRequest = new CreateAccountRequest();
       createAccountRequest.setUserName("Ola");
       createAccountRequest.setPassword("1");
-      assertThrows(NameAlreadyExistException.class, ()-> userService.register(createAccountRequest));
+      assertThrows(NameAlreadyExistException.class, ()-> readerService.register(createAccountRequest));
     }
 
     @Test
     public void testThatUserCanLogInAfterCreatingAccount() throws ValidateLoginException, LoginException, NameAlreadyExistException {
-        userService.deleteAll();
+        readerService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Olawale Mor");
         user3.setPassword("1");
-        String expected = userService.register(user3);
+        String expected = readerService.register(user3);
         assertEquals("Account created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
         dtos.setUserName("Olawale Mor");
         dtos.setPassword("1");
-        boolean expected2 = userService.login(dtos);
+        boolean expected2 = readerService.login(dtos);
         assertTrue(expected2);
 
     }
@@ -84,65 +84,65 @@ class UserServiceImplTest {
         user3.setPassword("1");
         user3.getUserName();
         user3.getPassword();
-        String expected = userService.register(user3);
+        String expected = readerService.register(user3);
         assertEquals("Account created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
         dtos.setUserName("Olawale More");
         dtos.setPassword("2");
-        assertThrows(LoginException.class, () -> userService.login(dtos));
+        assertThrows(LoginException.class, () -> readerService.login(dtos));
     }
         @Test
     public void testThatUserCanLogInToLibrary () throws NameAlreadyExistException, LoginException {
-            userService.deleteAll();
+            readerService.deleteAll();
             CreateAccountRequest user3 = new CreateAccountRequest();
             user3.setUserName("Olawale Mor");
             user3.setPassword("1");
-            String expected = userService.register(user3);
+            String expected = readerService.register(user3);
             assertEquals("Account created successfully", expected);
 
             LogInRequest dtos = new LogInRequest();
             dtos.setUserName("Olawale Mor");
             dtos.setPassword("1");
-            boolean expected2 = userService.login(dtos);
+            boolean expected2 = readerService.login(dtos);
             assertTrue(expected2);
     }
 @Test
     public void testThatUserCanDeleteAccount() throws NameAlreadyExistException, LoginException, UserNotFoundException {
-        userService.deleteAll();
+        readerService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Olawale Moy");
         user3.setPassword("2");
-        String expected = userService.register(user3);
+        String expected = readerService.register(user3);
         assertEquals("Account created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
         dtos.setUserName("Olawale Moy");
         dtos.setPassword("2");
-        boolean expected2 = userService.login(dtos);
+        boolean expected2 = readerService.login(dtos);
         assertTrue(expected2);
 
 
         DeleteAccount deleteAccount = new DeleteAccount();
         deleteAccount.setUserName("Olawale Moy");
         deleteAccount.setPassword("2");
-        String expected1 = userService.deleteAccount(deleteAccount);
+        String expected1 = readerService.deleteAccount(deleteAccount);
         assertEquals("Account deleted successfully", expected1);
     }
 
     @Test
     public void testThatUserCanFindBookByTitle() throws LoginException, NoBookFoundWIthTitleException, NameAlreadyExistException {
-        userService.deleteAll();
+        readerService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Ola");
         user3.setPassword("1");
-        String expected = userService.register(user3);
+        String expected = readerService.register(user3);
         assertEquals("Account created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
         dtos.setUserName("Ola");
         dtos.setPassword("1");
-        boolean expected2 = userService.login(dtos);
+        boolean expected2 = readerService.login(dtos);
         assertTrue(expected2);
 
 //        Book expectedBook = libraryService.findBookByTitle("Ablaze");
@@ -151,17 +151,17 @@ class UserServiceImplTest {
 
     @Test
     public void testThatUserCanFindBookByTitleIgnoringLettering() throws NameAlreadyExistException, LoginException, NoBookFoundWIthTitleException {
-        userService.deleteAll();
+        readerService.deleteAll();
         CreateAccountRequest user3 = new CreateAccountRequest();
         user3.setUserName("Olawale Moy");
         user3.setPassword("2");
-        String expected = userService.register(user3);
+        String expected = readerService.register(user3);
         assertEquals("Account created successfully", expected);
 
         LogInRequest dtos = new LogInRequest();
         dtos.setUserName("Olawale Moy");
         dtos.setPassword("2");
-        boolean expected2 = userService.login(dtos);
+        boolean expected2 = readerService.login(dtos);
         assertTrue(expected2);
 
 //        assertThrows(NoBookFoundWIthTitleException.class, ()-> shelfService.findByBook_Title("ablaze"));

@@ -10,6 +10,6 @@ public class Library {
     @Id
     private String id;
     private Shelf shelf;
-    private User users;
+    private Reader users;
     private Creator creator;
 }

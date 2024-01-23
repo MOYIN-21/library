@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document("/Users")
-public class User {
+public class Reader {
     @Id
     private String id;
     private String userName;

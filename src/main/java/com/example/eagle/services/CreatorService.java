@@ -10,7 +10,7 @@ import javax.security.auth.login.LoginException;
 public interface CreatorService {
     void deleteAll();
 
-    String register(CreateAccountRequest creatorUserName) throws NameAlreadyExistException;
+    String signUp(CreateAccountRequest creatorUserName) throws NameAlreadyExistException;
 
     boolean login(LogInRequest creator) throws LoginException;
 

@@ -1,6 +1,6 @@
 package com.example.eagle.services;
 import com.example.eagle.data.models.Creator;
-import com.example.eagle.data.models.User;
+import com.example.eagle.data.models.Reader;
 import com.example.eagle.data.repositories.CreatorRepo;
 import com.example.eagle.dtos.CreateAccountRequest;
 import com.example.eagle.dtos.DeleteAccount;
@@ -27,7 +27,7 @@ public class CreatorServiceImpl implements CreatorService{
     }
 
     @Override
-    public String register(CreateAccountRequest creatorUserName) throws NameAlreadyExistException {
+    public String signUp(CreateAccountRequest creatorUserName) throws NameAlreadyExistException {
         Creator creator = new Creator();
         map(creatorUserName, creator);
         boolean foundCreator = validateCreatorUserName(creatorUserName.getUserName());
@@ -37,7 +37,7 @@ public class CreatorServiceImpl implements CreatorService{
 
     @Override
     public boolean login(LogInRequest creator) throws LoginException {
-        Optional<User> foundUser = creatorRepo.findByUserNameAndPassword(creator.getUserName(), creator.getPassword());
+        Optional<Reader> foundUser = creatorRepo.findByUserNameAndPassword(creator.getUserName(), creator.getPassword());
         if (foundUser.isPresent()) {
             return true;
         }

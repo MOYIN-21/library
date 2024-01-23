@@ -1,8 +1,7 @@
 package com.example.eagle.services;
 
-import com.example.eagle.data.models.User;
-import com.example.eagle.data.repositories.LibraryRepo;
-import com.example.eagle.data.repositories.UserRepo;
+import com.example.eagle.data.models.Reader;
+import com.example.eagle.data.repositories.ReaderRepo;
 import com.example.eagle.dtos.CreateAccountRequest;
 import com.example.eagle.dtos.DeleteAccount;
 import com.example.eagle.dtos.LogInRequest;
@@ -18,21 +17,21 @@ import java.util.Optional;
 import static com.example.eagle.utils.mapper.map;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class ReaderServiceImpl implements ReaderService {
     @Autowired
-    private UserRepo userRepo;
+    private ReaderRepo readerRepo;
     @Override
     public String register(CreateAccountRequest createAccount) throws NameAlreadyExistException {
-        User user = new User();
-        map(createAccount, user);
+        Reader reader = new Reader();
+        map(createAccount, reader);
         boolean foundUser = validateUserName(createAccount.getUserName());
-        if (!foundUser) userRepo.save(user);
+        if (!foundUser) readerRepo.save(reader);
         return "Account created successfully";
     }
 
     @Override
     public boolean login(LogInRequest logInRequest) throws LoginException {
-        Optional<User> foundUser = userRepo.findByUserNameAndPassword(logInRequest.getUserName(), logInRequest.getPassword());
+        Optional<Reader> foundUser = readerRepo.findByUserNameAndPassword(logInRequest.getUserName(), logInRequest.getPassword());
         if (foundUser.isPresent()) {
             return true;
         }
@@ -40,7 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     private boolean validateUserName(String userName) throws NameAlreadyExistException {
-        Optional<User> foundUser = userRepo.findByUserName(userName);
+        Optional<Reader> foundUser = readerRepo.findByUserName(userName);
         if (foundUser.isPresent()) {
             throw new NameAlreadyExistException("Username already exist");
         }
@@ -48,18 +47,18 @@ public class UserServiceImpl implements UserService {
     }
 
     public void deleteAll() {
-        userRepo.deleteAll();
+        readerRepo.deleteAll();
     }
 
     @Override
     public String deleteAccount(DeleteAccount deleteAccount) throws UserNotFoundException {
-            userRepo.delete(findUser(deleteAccount.getUserName()));
+            readerRepo.delete(findUser(deleteAccount.getUserName()));
 
         return "Account deleted successfully";
     }
 
-    private User findUser(String userName) throws UserNotFoundException {
-        Optional<User> user = userRepo.findByUserName(userName);
+    private Reader findUser(String userName) throws UserNotFoundException {
+        Optional<Reader> user = readerRepo.findByUserName(userName);
         if(user.isEmpty()) throw new UserNotFoundException("User not Found");
         return null;
     }
